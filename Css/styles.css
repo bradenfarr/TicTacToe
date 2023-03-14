@@ -1,10 +1,24 @@
 p {
-    margin: 0;
+    margin: auto;
     padding: 0;
     text-align: center;
     font-size: 12vw;
+    border: solid black 1px;
 }
+
+body{
+    background-color: rgb(44, 48, 44);
+}
+
 .flexRow {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
+}
+
+.gameBoard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
