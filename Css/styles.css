@@ -1,6 +1,8 @@
 p {
-    margin: auto;
+    margin: 0;
     padding: 0;
+    width: 12vw;
+    height: 12vw;
     text-align: center;
     font-size: 12vw;
     border: solid black 1px;
@@ -10,15 +12,12 @@ body{
     background-color: rgb(44, 48, 44);
 }
 
-.flexRow {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-}
-
 .gameBoard {
+    width: 40%;
+    margin: 3rem auto;
+    padding: 3rem;
+    background-color: blue;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
