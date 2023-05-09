@@ -12,6 +12,11 @@ body{
     background-color: rgb(44, 48, 44);
 }
 
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
 .gameBoard {
     width: 40%;
     margin: 3rem auto;
