@@ -19,10 +19,57 @@ h1 {
 
 .gameBoard {
     width: 40%;
-    margin: 3rem auto;
-    padding: 3rem;
-    background-color: blue;
+    margin: 20rem auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+
+/*box border styles */
+
+
+.box1 {
+    border-style: solid;
+    border-width: 0rem 0.5rem 0.5rem 0rem; 
+}
+
+.box2 {
+    border-style: solid;
+    border-width: 0rem 0.5rem 0.5rem 0.5rem; 
+}
+
+.box3 {
+    border-style: solid;
+    border-width: 0rem 0rem 0.5rem 0.5rem; 
+}
+
+.box4 {
+    border-style: solid;
+    border-width: 0.5rem 0.5rem 0.5rem 0rem; 
+}
+
+.box5 {
+    border-style: solid;
+    border-width: 0.5rem 0.5rem 0.5rem 0.5rem; 
+}
+
+.box6 {
+    border-style: solid;
+    border-width: 0.5rem 0rem 0.5rem 0.5rem; 
+}
+
+.box7 {
+    border-style: solid;
+    border-width: 0.5rem 0.5rem 0rem 0rem; 
+}
+
+.box8 {
+    border-style: solid;
+    border-width: 0.5rem 0.5rem 0rem 0.5rem; 
+}
+
+.box9 {
+    border-style: solid;
+    border-width: 0.5rem 0rem 0rem 0.5rem; 
 }
