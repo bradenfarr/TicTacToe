@@ -10,14 +10,15 @@ const box9 = document.querySelector(".box9");
 
 const boxes = [box1,box2,box3,box4,box5,box6,box7,box8,box9]
 
-function computerPlay () { 
+function computerPlay () {
+    const randomBox = boxes[Math.floor(Math.random() * boxes.length)]; 
     let i = 0
     while (i < 1) {
-        const randomBox = boxes[Math.floor(Math.random() * boxes.length)];
-        if (randomBox.textContent.includes("X")) {
-            return computerPlay()
+        let computerChoice = randomBox
+        if (computerChoice.textContent.includes("X")) {
+            return computerPlay()            
         } else {
-            randomBox.textContent = "O"
+            computerChoice.textContent = "O"
             i++
         }
     }
