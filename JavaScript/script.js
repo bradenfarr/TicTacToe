@@ -8,6 +8,21 @@ const box7 = document.querySelector(".box7");
 const box8 = document.querySelector(".box8");
 const box9 = document.querySelector(".box9");
 
+const boxes = [box1,box2,box3,box4,box5,box6,box7,box8,box9]
+
+function computerPlay () { 
+    let i = 0
+    while (i < 1) {
+        const randomBox = boxes[Math.floor(Math.random() * boxes.length)];
+        if (randomBox.textContent.includes("X")) {
+            return computerPlay()
+        } else {
+            randomBox.textContent = "O"
+            i++
+        }
+    }
+};
+
 box1.addEventListener('click', function(){
     box1.textContent = "X"
 });
@@ -41,5 +56,5 @@ box8.addEventListener('click', function(){
 });
 
 box9.addEventListener('click', function(){
-    box9.textContent = "X"
+    computerPlay()
 });
