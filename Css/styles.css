@@ -19,12 +19,16 @@ h1 {
 
 .gameBoard {
     width: 40%;
-    margin: 20rem auto;
+    margin: 10rem auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    user-select: none;
 }
 
+.disableClick {
+    pointer-events: none;
+}
 
 /*box border styles */
 
