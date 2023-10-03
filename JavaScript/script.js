@@ -147,9 +147,9 @@ function checkBoxes () {
 };
 
 function playerWin () {
-    win.textContent = "You Won!"
+    result.textContent = "You Won!"
 }
 
 function computerWin () {
-    win.textContent = "You Lost!"
+    result.textContent = "You Lost!"
 }

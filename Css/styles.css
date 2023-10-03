@@ -19,7 +19,7 @@ h1 {
 
 .gameBoard {
     width: 50%;
-    margin: 10rem auto;
+    margin: 2rem auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -30,6 +30,18 @@ h1 {
     pointer-events: none;
 }
 
+#win {
+    color: green;
+}
+
+#loss {
+    color: red
+}
+
+.result {
+    text-align: center;
+    font-size: 2em;
+}
 
 /*box border styles */
 
