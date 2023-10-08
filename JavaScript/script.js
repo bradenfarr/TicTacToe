@@ -7,12 +7,11 @@ const box6 = document.querySelector(".box6");
 const box7 = document.querySelector(".box7");
 const box8 = document.querySelector(".box8");
 const box9 = document.querySelector(".box9");
-const test = document.querySelector(".test");
-const win = document.querySelector(".win")
+const reset = document.querySelector(".reset");
+const result = document.querySelector(".result")
 
 const boxes = [box1,box2,box3,box4,box5,box6,box7,box8,box9]
-const char1 = "X"
-const char2 = "O"
+const RECHARGE_TIME = 1500;
 
 function computerPlay () {
     const randomBox = boxes[Math.floor(Math.random() * boxes.length)]; 
@@ -80,8 +79,12 @@ box9.addEventListener('click', function(){
     computerPlay()
 });
 
-test.addEventListener('click', function(){
-    computerPlay()
+reset.addEventListener('click', function(){
+    result.textContent = "Click a picture to play."
+    boxes.forEach((box) => {
+        box.textContent = ""
+        box.classList.remove("disableClick")
+    })
 });
 
 function checkBoxes () {
