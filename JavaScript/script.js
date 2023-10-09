@@ -8,7 +8,8 @@ const box7 = document.querySelector(".box7");
 const box8 = document.querySelector(".box8");
 const box9 = document.querySelector(".box9");
 const reset = document.querySelector(".reset");
-const result = document.querySelector(".result")
+const result = document.querySelector(".result");
+const gameBoard = document.querySelector(".gameBoard")
 
 const boxes = [box1,box2,box3,box4,box5,box6,box7,box8,box9]
 const RECHARGE_TIME = 1500;
@@ -29,54 +30,63 @@ box1.addEventListener('click', function(){
     box1.textContent = "X"
     checkBoxes()
     computerPlay()
+    box1.classList.add("disableClick")
 });
 
 box2.addEventListener('click', function(){
     box2.textContent = "X"
     checkBoxes()
     computerPlay()
+    box2.classList.add("disableClick")
 });
 
 box3.addEventListener('click', function(){
     box3.textContent = "X"
     checkBoxes()
     computerPlay()
+    box3.classList.add("disableClick")
 });
 
 box4.addEventListener('click', function(){
     box4.textContent = "X"
     checkBoxes()
     computerPlay()
+    box4.classList.add("disableClick")
 });
 
 box5.addEventListener('click', function(){
     box5.textContent = "X"
     checkBoxes()
     computerPlay()
+    box5.classList.add("disableClick")
 });
 
 box6.addEventListener('click', function(){
     box6.textContent = "X"
     checkBoxes()
     computerPlay()
+    box6.classList.add("disableClick")
 });
 
 box7.addEventListener('click', function(){
     box7.textContent = "X"
     checkBoxes()
     computerPlay()
+    box7.classList.add("disableClick")
 });
 
 box8.addEventListener('click', function(){
     box8.textContent = "X"
     checkBoxes()
     computerPlay()
+    box8.classList.add("disableClick")
 });
 
 box9.addEventListener('click', function(){
     box9.textContent = "X"
     checkBoxes()
     computerPlay()
+    box9.classList.add("disableClick")
 });
 
 reset.addEventListener('click', function(){
@@ -85,6 +95,7 @@ reset.addEventListener('click', function(){
         box.textContent = ""
         box.classList.remove("disableClick")
     })
+    gameBoard.classList.remove("disableClick")
 });
 
 function checkBoxes () {
@@ -151,8 +162,10 @@ function checkBoxes () {
 
 function playerWin () {
     result.textContent = "You Won!"
+    gameBoard.classList.add("disableClick")
 }
 
 function computerWin () {
     result.textContent = "You Lost!"
+    gameBoard.classList.add("disableClick")
 }
